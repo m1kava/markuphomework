@@ -8,6 +8,11 @@
     z-index: 1;
 }
 
+section .slick-prev,
+section .slick-next {
+    display: none !important;
+}
+
 .slick-dots {
     position: absolute;
     bottom: 20px;
@@ -52,7 +57,7 @@ section .slick-dots li button {
 
 .slick-prev:after {
     content:'';
-    background-image: url('/img/icon/back.png');
+    background-image: url('../img/icon/back.png');
     position: absolute;
     left: 0;
     width: 32px;
@@ -67,7 +72,7 @@ section .slick-dots li button {
 
 .slick-next:after {
     content:'';
-    background-image: url('/img/icon/Group\ 2691.png');
+    background-image: url('../img/icon/Group2691.png');
     position: absolute;
     width: 32px;
     height: 56px;
@@ -210,6 +215,7 @@ section .slick-dots li button {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border-radius: 10px;
 }
 
 .slide-link-text {

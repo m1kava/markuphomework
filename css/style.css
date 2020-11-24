@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 body {
@@ -114,6 +114,7 @@ nav .logo {
 
 nav span {
     color: #f03135;
+    margin: 0 10px;
 }
 
 nav span img {
@@ -170,7 +171,7 @@ nav ul li > .drop {
 nav ul li > .drop ul {
     background-color: #f4f4f5;
     border-radius: 5px;
-    box-shadow: 0px 3px 8px #b0b0b6;
+    box-shadow: 0 3px 8px 0 rgba(31, 27, 82, 0.05);
 }
 
 nav ul li > .drop ul::after {
@@ -263,7 +264,7 @@ main section article .img-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block  ;
+    display: block;
 }
 
 main section article h3 {
@@ -273,7 +274,7 @@ main section article h3 {
 
 main section article p {
     margin: 20px 0;
-    font-size: 14px;
+    color: #606368;
 }
 
 main .see-all {
@@ -334,7 +335,11 @@ article .information .category .informer:hover span {
     display: block;
 }
 
-article .information a span {
+.informer {
+    display: block;
+}
+
+article .information a span span {
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -352,7 +357,7 @@ article .information .category .informer {
     margin-right: 10px;
 }
 
-article .information a span::after {
+article .information a span span::after {
     bottom: -15px;
     content: '';
     position: absolute;

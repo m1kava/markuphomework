@@ -1,15 +1,3 @@
-// function resizeLinkDivs() {
-//     //Carousel link divs
-//     // var availableHeight = $('.slick-track').height();
-//     // var numLinkDivs = $('.list-links').length;
-//     // var heightLinkDivs = availableHeight / numLinkDivs;
-//     // console.log(availableHeight + ' - ' + numLinkDivs + ' - ' + heightLinkDivs);
-//     // $('.list-links').height(heightLinkDivs);
-
-//     //Progress indicator
-//     // $('.slider-progress').width(107);
-// }
-
 $(document).ready(function() {
     var $slick = $('.list-carousel');
     var $slicknav = $('.list-carousel-links');
@@ -86,6 +74,7 @@ $(document).ready(function() {
                         autoplay: true,
                         autoplaySpeed: 3000,
                         dots: true,
+                        arrow: false
                     });
                 }
             }
@@ -116,7 +105,7 @@ $(document).ready(function() {
 
     function interval() {
         if (isPause === false) {
-            percentTime += 0.9 / (time + 0.1);
+            percentTime += 1 / (time + 0.1);
             $bar.css({
                 width: percentTime + "%"
             });
@@ -154,11 +143,3 @@ $('.list-carousel').on('afterChange', function(event, slick, currentSlide) {
     $('.list-links').removeClass('slick-current');
     $('.list-links[data-slick-index="' + currentSlide + '"]').addClass('slick-current');
 });
-
-// $(window).resize(function () {
-//     $('.js-slider').not('.slick-initialized').slick('resize');
-// });
-
-// $(window).on('orientationchange', function () {
-//     $('.js-slider').not('.slick-initialized').slick('resize');
-// });

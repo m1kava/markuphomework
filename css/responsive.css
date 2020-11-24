@@ -1,4 +1,4 @@
-/* სმარტფონები */
+/* Smartphone */
 @media only screen and (max-width: 768px) {
     .container {
         width: 100%;
@@ -116,9 +116,17 @@
         position: absolute;
         left: 20px;
     }
+
+    main section article h3 {
+        font-size: 16px;
+    }
+
+    main section article p {
+        font-size: 12px;
+    }
 }
 
-/* ტაბლეტი (პორტრეტი) და დიდი ზომის სმარტფონები */
+/* Tablet Portrait */
 @media only screen and (min-width: 768px) {
     .container {
         width: 100%;
@@ -252,12 +260,20 @@
         position: absolute;
         left: 20px;
     }
+
+    main section article h3 {
+        font-size: 16px;
+    }
+
+    main section article p {
+        font-size: 14px;
+    }
 }
 
-/* დესქტოპო და ზემოთ */
+/* Desktop */
 @media only screen and (min-width: 1280px) {
     .container {
-        width: 1280px;
+        max-width: 1280px;
     }
 
     header { 
@@ -385,5 +401,13 @@
 
     .burger-menu {
         display: none;
+    }
+
+    main section article h3 {
+        font-size: 16px;
+    }
+
+    main section article p {
+        font-size: 14px;
     }
 }
