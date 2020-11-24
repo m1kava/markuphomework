@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var $slick = $('.list-carousel');
-    var $slicknav = $('.list-carousel-links');
-    var $slicksec = $('section');
+    let $slick = $('.list-carousel');
+    let $slicknav = $('.list-carousel-links');
+    let $slicksec = $('section');
 
     $slick.slick({
         slidesToShow: 1,
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
     $(window).on('load resize orientationchange', function() {
         $slicksec.each(function(){
-            var $carousel = $(this);
+            let $carousel = $(this);
             /* Initializes a slick carousel only on mobile screens */
             // slick on mobile
             if ($(window).width() > 768) {
@@ -84,8 +84,8 @@ $(document).ready(function() {
 
     //Progress bar
 
-    var time = 2;
-    var $bar, isPause, tick, percentTime;
+    let time = 2;
+    let $bar, isPause, tick, percentTime;
     $bar = $('.slider-progress .progress');
     $('.slider-wrapper').on({
         mouseenter: function() {
