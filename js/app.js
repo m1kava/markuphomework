@@ -6,9 +6,11 @@ $(document).ready(function() {
     $slick.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         fade: true,
+        cssEase: 'linear',
+        lazyLoad: 'ondemand',
         asNavFor: '.list-carousel-links',
         variableWith: true,
         responsive: [
@@ -30,6 +32,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: true,
         vertical: true,
+        autoplay: false,
         asNavFor: '.list-carousel',
         focusOnSelect: true,
         responsive: [
@@ -84,17 +87,9 @@ $(document).ready(function() {
 
     //Progress bar
 
-    let time = 2;
+    let time = 5;
     let $bar, isPause, tick, percentTime;
     $bar = $('.slider-progress .progress');
-    $('.slider-wrapper').on({
-        mouseenter: function() {
-            isPause = true;
-        },
-        mouseleave: function() {
-            isPause = false;
-        }
-    });
 
     function startProgressbar() {
         resetProgressbar();
@@ -139,7 +134,3 @@ $(window).on('resize', function() {
     $('.slider-progress').width(107);
 });
 
-$('.list-carousel').on('afterChange', function(event, slick, currentSlide) {
-    $('.list-links').removeClass('slick-current');
-    $('.list-links[data-slick-index="' + currentSlide + '"]').addClass('slick-current');
-});
