@@ -120,6 +120,11 @@
     main section article p {
         font-size: 12px;
     }
+
+    .slide-link-text h3 {
+        margin-bottom: 10px;
+        height: 40px;
+    }
 }
 
 /* Tablet Portrait */
@@ -259,6 +264,11 @@
 
     main section article p {
         font-size: 14px;
+    }
+
+    .slide-link-text h3 {
+        margin-bottom: 10px;
+        height: 40px;
     }
 }
 
@@ -401,5 +411,10 @@
 
     main section article p {
         font-size: 14px;
+    }
+
+    .slide-link-text h3 {
+        margin-bottom: 20px;
+        height: initial;
     }
 }
