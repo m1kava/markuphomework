@@ -144,6 +144,14 @@ section .slick-dots li button {
     max-width: 150px;
 }
 
+.list-carousel div .carousel-information span svg {
+    margin-right: 10px;
+}
+
+.list-carousel div .carousel-information span svg path {
+    fill: #fff;
+}
+
 .list-carousel div .carousel-information h1 {
     color: #fff;
 }
@@ -176,6 +184,11 @@ section .slick-dots li button {
     margin-right: 10px;
 }
 
+.action-link a svg {
+    margin-right: 10px;
+}
+
+
 .slide-link-text h3 {
     font-size: 14px;
     color: #fff;
@@ -195,6 +208,10 @@ section .slick-dots li button {
 .list-carousel-links .slick-current a {
     background-color: #f03135;
     color: #fff;
+}
+
+.list-carousel-links .slick-current a svg path {
+    fill: #fff;
 }
 
 .list-carousel-links .slick-current .slider-progress .progress {
