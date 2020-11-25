@@ -45,14 +45,15 @@ header ul li a:hover {
     background-color: #f4f4f5;
 }
 
-header ul li img {
-    padding-right: 5px;
+header ul li a img {
+    margin-right: 5px;
     height: 18px;
 }
 
-header ul li a:hover img {
-    filter: grayscale(0);
+header ul li a svg {
+    margin-right: 5px;
 }
+
 
 
 /* NAV */
